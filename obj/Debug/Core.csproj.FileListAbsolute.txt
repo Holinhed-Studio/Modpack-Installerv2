@@ -37,5 +37,4 @@ D:\MCMods\Modpack-Installerv2\obj\Debug\Core.csproj.GenerateResource.cache
 D:\MCMods\Modpack-Installerv2\obj\Debug\Core.csproj.CoreCompileInputs.cache
 D:\MCMods\Modpack-Installerv2\obj\Debug\Core.exe
 D:\MCMods\Modpack-Installerv2\obj\Debug\Core.pdb
-D:\MCMods\Modpack-Installerv2\obj\Debug\Core.ForgeInstall.resources
 D:\MCMods\Modpack-Installerv2\obj\Debug\Core.DownloadRunning.resources

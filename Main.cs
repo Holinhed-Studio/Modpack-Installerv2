@@ -81,9 +81,18 @@ namespace Core
     private void button1_Click(object sender, EventArgs e)
     {
       this.Hide();
-      var forgeInstall = new ForgeInstall();
-      forgeInstall.Show();
-      Process p = Process.Start("java.exe");
+      string fArgs = ("-jar modpack/forge.jar");
+      try
+      {
+        Process p = Process.Start("java", fArgs);
+        p.WaitForExit();
+        this.Show();
+      }
+      catch (Exception)
+      {
+        MessageBox.Show("JAVA.EXE COULD NOT BE FOUND. PLEASE VERIFY YOUR JAVA PATH OR INSTALL JAVA, THEN CLICK *INSTALL FORGE* AGAIN.");
+        this.Show();
+      }
     }
     private void button4_Click(object sender, EventArgs e)
     {
