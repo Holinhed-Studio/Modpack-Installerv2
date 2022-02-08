@@ -54,6 +54,12 @@
     <Compile Include="ForgeInstall.Designer.cs">
       <DependentUpon>ForgeInstall.cs</DependentUpon>
     </Compile>
+    <Compile Include="DownloadRunning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DownloadRunning.Designer.cs">
+      <DependentUpon>DownloadRunning.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DownloadRunning.resx">
+      <DependentUpon>DownloadRunning.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgeInstall.resx">
       <DependentUpon>ForgeInstall.cs</DependentUpon>
     </EmbeddedResource>

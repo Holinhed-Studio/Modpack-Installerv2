@@ -33,12 +33,33 @@ namespace Core
 
     private void button2_Click(object sender, EventArgs e)
     {
+      this.Hide();
+      var Downloading = new DownloadRunning();
+      Downloading.Show();
       string aArgs = (" -m -nH -d -A *.jar -T 3 -t 1 --cut-dirs=1 --no-parent cdn.firehostredux.com/fartsncomc/modpack/");
       Process a = Process.Start("workers\\wget.exe", aArgs);
+      Downloading.progressBar1.Maximum = 100;
+      Downloading.progressBar1.Step = 10;
+      for (int i = 1; i <= 50; i++)
+      {
+        // Wait 200 milliseconds.
+        Thread.Sleep(200);
+        // Report progress.
+        Downloading.progressBar1.Value = i;
+      }
       a.WaitForExit();
       string bArgs = ("/MIR /Z /W:1 modpack ..\\.modpack");
       Process b = Process.Start("robocopy", bArgs);
+      for (int i = 51; i <= 100; i++)
+      {
+        // Wait 200 milliseconds.
+        Thread.Sleep(200);
+        // Report progress.
+        Downloading.progressBar1.Value = i;
+      }
       b.WaitForExit();
+      Downloading.Hide();
+      this.Show();
       Directory.Delete ("modpack", true);
     }
 
