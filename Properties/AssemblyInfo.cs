@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Core")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("FartsNCo. Modpack Installer")]
+[assembly: AssemblyDescription("Installer for Professor Fartsalot's Modpack")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Core")]
+[assembly: AssemblyCompany("FireHostRedux.com")]
+[assembly: AssemblyProduct("FartsNCo. Modpack Installer")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
