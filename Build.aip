@@ -19,12 +19,12 @@
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="Manufacturer" Value="FireHostRedux.com"/>
-    <ROW Property="ProductCode" Value="1033:{C5A59F00-ED3A-4CD6-8CA5-CE906C52DDEE} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{1FF1A7AD-56F2-488B-91E2-935BAA2BC28C} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="FartsNCo Mods"/>
     <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
-    <ROW Property="UpgradeCode" Value="{1461AC6D-C906-4A02-9021-2CFCE1C2A707}"/>
+    <ROW Property="UpgradeCode" Value="{DF13E4D0-7E59-4802-B1C0-6225D3C86127}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
     <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
@@ -37,6 +37,8 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
     <ROW Directory="AppDataFolder" Directory_Parent="TARGETDIR" DefaultDir="APPDAT~1|AppDataFolder" IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramMenuFolder" IsPseudoRoot="1"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
     <ROW Directory="fartsnco_Dir" Directory_Parent="AppDataFolder" DefaultDir="fartsnco"/>
     <ROW Directory="workers_Dir" Directory_Parent="APPDIR" DefaultDir="workers"/>
@@ -305,6 +307,10 @@
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
     <ROW Registry="VersionMajor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMajor" Value="#1" Component_="AI_CustomARPName" VirtualValue="#"/>
     <ROW Registry="VersionMinor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMinor" Value="#0" Component_="AI_CustomARPName" VirtualValue="#"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="FartsNCoInstaller" Directory_="DesktopFolder" Name="FARTSN~1|FartsNCo Installer" Component_="Modpack.exe" Target="[#Modpack.exe]" Hotkey="0" Icon_="icon_1.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="FartsNCoInstaller_1" Directory_="ProgramMenuFolder" Name="FARTSN~1|FartsNCo Installer" Component_="Modpack.exe" Target="[#Modpack.exe]" Hotkey="0" Icon_="icon_1.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiTextStyleComponent">
     <ROW TextStyle="BrandingStyle" FaceName="Segoe UI" Size="8" Color="2171376" MultiBuildColor="DefaultBuild:2565927" StyleBits="0" MsiKey="BrandingStyle"/>
