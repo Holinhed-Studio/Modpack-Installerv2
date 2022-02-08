@@ -49,7 +49,7 @@ namespace Core
       string bArgs = ("/MIR /Z /W:1 modpack\\config ..\\.minecraft\\config");
       string xArgs = ("/MIR /Z /W:1 modpack\\mods ..\\.minecraft\\mods");
       string hArgs = ("/MIR /Z /W:1 modpack\\resourcepacks ..\\.minecraft\\resourcepacks");
-      string zArgs = ("/MIR /Z /W:1 modpack\\shaderpacks ..\\.minecraft\\shaderpacks"); ;
+      string zArgs = ("/MIR /Z /W:1 modpack\\shaderpacks ..\\.minecraft\\shaderpacks");
       Process b = Process.Start("robocopy", bArgs);
       for (int i = 51; i <= 75; i++)
       {
