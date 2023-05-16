@@ -12,3 +12,15 @@ D:\MCMods\Modpack-Installerv2\resources\compiled\Modpack.exe
 D:\MCMods\Modpack-Installerv2\resources\compiled\Modpack.pdb
 D:\MCMods\Modpack-Installerv2\obj\Release\Modpack.exe
 D:\MCMods\Modpack-Installerv2\obj\Release\Modpack.pdb
+D:\Documents\GitHub\Modpack-Installerv2\resources\compiled\Modpack.exe.config
+D:\Documents\GitHub\Modpack-Installerv2\resources\compiled\Modpack.exe
+D:\Documents\GitHub\Modpack-Installerv2\resources\compiled\Modpack.pdb
+D:\Documents\GitHub\Modpack-Installerv2\obj\Release\Core.csproj.AssemblyReference.cache
+D:\Documents\GitHub\Modpack-Installerv2\obj\Release\Core.csproj.SuggestedBindingRedirects.cache
+D:\Documents\GitHub\Modpack-Installerv2\obj\Release\Core.DownloadRunning.resources
+D:\Documents\GitHub\Modpack-Installerv2\obj\Release\Core.Main.resources
+D:\Documents\GitHub\Modpack-Installerv2\obj\Release\Modpack.Properties.Resources.resources
+D:\Documents\GitHub\Modpack-Installerv2\obj\Release\Core.csproj.GenerateResource.cache
+D:\Documents\GitHub\Modpack-Installerv2\obj\Release\Core.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\Modpack-Installerv2\obj\Release\Modpack.exe
+D:\Documents\GitHub\Modpack-Installerv2\obj\Release\Modpack.pdb
