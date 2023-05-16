@@ -36,7 +36,7 @@ namespace Core
       this.Hide();
       var Downloading = new DownloadRunning();
       Downloading.Show();
-      string aArgs = (" -m -nH -d -A *.jar -T 3 -t 1 --cut-dirs=1 --no-parent cdn.firehostredux.com/fartsncomc/modpack/");
+      string aArgs = (" -m -nH -d -A *.jar -T 3 -t 1 --cut-dirs=1 --no-parent --no-check-certificate cdn.firehostredux.com/fartsncomc/modpack/");
       Process a = Process.Start("workers\\wget.exe", aArgs);
       Downloading.progressBar1.Maximum = 100;
       Downloading.progressBar1.Step = 10;
